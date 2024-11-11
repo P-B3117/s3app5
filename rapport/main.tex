@@ -1,0 +1,68 @@
+\documentclass[DIV=15,paper=letter,titlepage=true,fontsize=12pt,headings=normal,captions=nooneline]{scrartcl}
+\usepackage{Style}
+\usepackage[justification=centering]{caption}
+
+\begin{document}
+\input{Page presentation/Page presentation.tex}
+\newpage
+\renewcommand*\contentsname{Table des Matières}
+\tableofcontents
+\newpage
+
+\setcounter{page}{0}
+\pagenumbering{arabic}
+
+ \section{Mise en Contexte} %\label{Introduction}
+ \subsection{Introduction}
+ \input{partie-introduction/intro.tex}
+%  \FloatBarrier
+ \subsection{Mise en situation}
+ \input{partie-introduction/situation.tex}
+%  \FloatBarrier
+% \section{Présentation du jeu} \label{Présentation du jeu}
+% \input{Partie 2/Application}
+% \FloatBarrier
+% \subsection{Menu} \label{Menu}
+% \input{Partie 2/Menu}
+% \FloatBarrier
+% \subsection{Paramètres} \label{Parametre}
+% \input{Partie 2/Parametre}
+% \FloatBarrier
+% \subsection{Jeu} \label{Jeu}
+% \input{Partie 2/Jeu}
+% \FloatBarrier
+% \section{Ergonomie} \label{Ergonomie}
+% \FloatBarrier
+% \subsection{Mise en contexte} \label{Mise_en_contexte}
+% \input{Partie 3/Mise en contexte}
+% \FloatBarrier
+% \subsection{Menu} \label{Ergo_Menu}
+% \input{Partie 3/Ergo_Menu}
+% \FloatBarrier
+% \subsection{Paramètre} \label{Ergo_Parametre}
+% \input{Partie 3/Ergo_Parametre}
+% \FloatBarrier
+% \subsection{Jeu} \label{Ergo_Jeu}
+% \input{Partie 3/Ergo_Jeu}
+% \section{Tests et vérifications de l'application} \label{tests et vérif}
+% \subsection{Mise en contexte} \label{test_contexte}
+% \input{Partie 4/Mise en contexte}
+% \FloatBarrier
+% \subsection{Plan de test} \label{test_plan}
+% \input{Partie 4/Plan de test}
+% \FloatBarrier
+% \section{diagrammes} \label{diagrammes}
+% \subsection{Mise en contexte} \label{diag_contexte}
+% \input{Partie 5/Mise en contexte}
+% \FloatBarrier
+% \subsection{Diagramme de classe} \label{diag_classe}
+% \input{Partie 5/Diagramme de classe}
+% \FloatBarrier
+% \subsection{Diagramme de cas d'utilisation} \label{diag_util}
+% \input{Partie 5/Diagramme de cas d'utilisation}
+% \FloatBarrier
+
+
+
+
+\end{document}
