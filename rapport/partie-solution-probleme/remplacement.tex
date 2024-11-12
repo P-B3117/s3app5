@@ -1,3 +1,20 @@
- Le connecteur en T devrait être remplacé par un connecteur en T dont chaque connecteur possède déjà une impédance adptée, permettant ainsi 
+ Le connecteur en T devrait être remplacé par un connecteur en T dont chaque connecteur possède déjà une impédance adptée, permettant ainsi
  d'annuler la réflection causée par le connecteur. De plus, comme pour la solution simple, il ne faut pas de circuits ouverts, on doit donc avoir
- une carte ou simplement une résistance rajoutée à chaque fin de connection afin d'éviter de la réflection.
+ une carte ou simplement une résistance rajoutée à chaque fin de connection afin d'éviter de la réflection. Le calcul suivant démontre les résistances
+ nécessaire pour adapter l'impédance du connecteur en T comme expliqué précédemment.
+
+ \begin{equation}
+    \begin{aligned}
+        Zl & = Zc = 50 \\
+        R1 & = R2 = R3 \\
+        Zl & = R1 + [(R3 + Zc) // (R2 + Zc)] \\
+        Zl & = R1 + (\frac{1}{R3 + Zc} + \frac{1}{R2 + Zc})^-1 \\
+        Z & = R + (\frac{2}{R + Z})^-1 \\
+        Z & = R + \frac{R + Z}{2} \\
+        50 & = R + \frac{R + 50}{2} \\
+        25 & = R + \frac{R}{2} \\
+        25 * \frac{2}{3} & = R1 \\
+        R & = 16.66 \\
+        \label{eq:equation-longueur-simple}
+    \end{aligned}
+ \end{equation}
